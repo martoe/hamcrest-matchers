@@ -1,0 +1,16 @@
+apply plugin: "java"
+
+group = "at.bxm.hamcrest"
+sourceCompatibility = 1.7
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile("org.hamcrest:hamcrest-core:1.3")
+}
+
+tasks.withType(JavaCompile) {
+  options.encoding = "UTF-8"
+}
